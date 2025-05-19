@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memo by Walid</title>
+
+    <!-- Tailwind + Font Awesome (for icons used in sidebar.js) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SZzYf4F7..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- (OPTIONAL) Playfair/Poppins etc., add if you use them elsewhere -->
+  </head>
+
+  <body class="bg-white font-sans text-black">
+    <!-- 🟥  SIDEBAR (injected by sidebar.js) -->
+    <!--     ⚠  Do NOT add any markup here – the script does it all. -->
+
+    <!-- 🟦  MAIN CONTENT  -->
+    <!-- give it lg:ml-64 so when the sidebar is open on desktops the text isn’t hidden -->
+    <main class="px-6 py-6 max-w-6xl mx-auto lg:ml-64">
+      <!-- Top Bar -->
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-bold">Memo by Walid</h1>
+
+        <div class="flex items-center space-x-4">
+          <button
+            class="bg-orange-200 text-black text-sm font-medium px-3 py-1.5 rounded-full flex items-center space-x-1"
+          >
+            <span class="text-lg">❓</span>
+            <span>FAQ</span>
+          </button>
+          <div
+            class="w-8 h-8 bg-black rounded-full flex items-center justify-center text-white"
+          >
+            <span>👤</span>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="text-gray-400 text-xl mb-5">
+        Follow new updates and improvements to Memo.
+      </h4>
+
+      <!-- Subscribe Button -->
+      <button
+        class="bg-orange-300 text-black font-semibold px-5 py-2 rounded-full mb-6 flex items-center space-x-2"
+      >
+        <span>🔔</span>
+        <span>Subscribe to updates</span>
+      </button>
+
+      <!-- Search Bar -->
+      <div class="mb-6">
+        <input
+          type="text"
+          placeholder="Search..."
+          class="w-full max-w-sm px-4 py-2 border border-gray-300 rounded-full focus:outline-none"
+        />
+      </div>
+
+      <hr class="mb-6 border-gray-300" />
+
+      <!-- Date and Tags -->
+      <div class="flex justify-between space-x-3 mb-4">
+        <div>
+          <p class="font-bold text-lg">Nov 28, 2024</p>
+          <span
+            class="bg-green-200 text-green-800 text-xs font-semibold px-2 py-1 rounded-full"
+            >New</span
+          >
+          <span
+            class="bg-blue-200 text-blue-800 text-xs font-semibold px-2 py-1 rounded-full"
+            >Improved</span
+          >
+        </div>
+        <div>
+          <button class="py-2 px-3 bg-blue-500 rounded-3xl text-white">
+            Remove memo
+          </button>
+        </div>
+      </div>
+
+      <!-- Banner -->
+      <div class="rounded-xl overflow-hidden border border-gray-200 shadow-md">
+        <div class="bg-gray-100 px-6 py-8 text-center">
+          <h2 class="text-xl font-bold mb-4">
+            Introducing the World's 1st&nbsp;
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-orange-500"
+            >
+              AI Professor
+            </span>
+          </h2>
+
+          <img
+            src="asset/image.png"
+            alt="AI Professor Banner"
+            class="mx-auto w-full max-w-4xl rounded-lg shadow mb-6"
+          />
+
+          <a href="#" class="hover:underline">
+            <h1 class="font-bold text-3xl">
+              Memo 7.0: Track Mode, AI Professor & Multiple Infinite Canvases
+              (Playground Mode)
+            </h1>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!--  LOAD THE SIDEBAR LOGIC  -->
+    <script src="sidebar.js" defer></script>
+  </body>
+</html>
